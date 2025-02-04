@@ -1,21 +1,9 @@
 package org.example
-
 import Dog
 import Pet
 import User
-import castingAndTypeChecking
-import division
-import double
-import greet
-import isPair
-import sum
 
 fun main() {
-
-    //castingAndTypeChecking("Kevin KONE")
-
-    //println("Kotlin".greet())
-    //println(15.double())
 
     val user = User(name= "Kevin KONE", age = 10)
 
