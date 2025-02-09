@@ -1,11 +1,11 @@
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-import java.util.Date
+import models.CashWallet
+import models.VirtualAccount
 
 fun main() {
 
-    val  savingCashWallet = CashWallet(id = 100,name= "Savings", balance = 0.0)
+    val  savingCashWallet: VirtualAccount = CashWallet(id = 100,name= "Savings", balance = 0.0)
 
+    savingCashWallet.getCreatedAtDate
     savingCashWallet.historic()
     println(savingCashWallet.getBalance)
     savingCashWallet.makeDeposit(25000.0)

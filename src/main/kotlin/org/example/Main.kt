@@ -5,7 +5,8 @@ import User
 
 fun main() {
 
-    val user = User(name= "Kevin KONE", age = 10)
+    val user = User(name= "Kevin KONE", age = 20)
+    val userOne = User(name= "Kevin KONE", age = 20)
 
     val milou: Pet = Dog("Milou")
 
@@ -18,8 +19,12 @@ fun main() {
 
     println(user.toString())
 
-    print(milou.getName())
+    println(milou.getName())
+
+    println(user == userOne)
 
 }
 
 //https://kotlinlang.org/docs/getting-started.html#choose-your-kotlin-use-case
+//https://www.youtube.com/watch?v=8uEYI6lTGps : Learn Kotlin for beginner
+//https://www.youtube.com/watch?v=Og287zzOTEM :  Learn Kotlin RoadMap
