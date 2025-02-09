@@ -1,7 +1,16 @@
+import java.util.*
 
 class Person {
-    private val name: String = ""
-    private val age: Int = 0
+     var name: String = "kevin KONE"
+         get() = field.uppercase(Locale.getDefault())
+         set(value) { field = "person $value" }
+     var age: Int = 0
+         set(value) {
+             if(value<0){
+                 throw  IllegalArgumentException("Age can't be negative")
+             }
+             field = value
+         }
 
 
     fun printInfo() {
@@ -58,4 +67,16 @@ open class Pet( private var name: String) {
 }
 
 class Dog(name: String) : Pet(name) {
+}
+
+fun main() {
+    var personOne:Person = Person()
+
+    personOne.age = -1
+
+    println("Person One : ${personOne.name}")
+
+    personOne.name = "James"
+
+    println("Person One : ${personOne.name}")
 }
