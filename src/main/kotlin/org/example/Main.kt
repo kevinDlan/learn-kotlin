@@ -23,8 +23,11 @@ fun main() {
 
     println(user == userOne)
 
+    
+
 }
 
 //https://kotlinlang.org/docs/getting-started.html#choose-your-kotlin-use-case
 //https://www.youtube.com/watch?v=8uEYI6lTGps : Learn Kotlin for beginner
 //https://www.youtube.com/watch?v=Og287zzOTEM :  Learn Kotlin RoadMap
+//https://www.youtube.com/watch?v=WT9-4DXUqsM : JetPack Compose
