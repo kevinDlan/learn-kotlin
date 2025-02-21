@@ -22,6 +22,10 @@ fun main() {
 
     println(newSmartPhone.toString())
 
+    //Operation.multiplicationTable(5)
+
+    println(isPalimdrom("kayak"))
+
 }
 
 
@@ -61,6 +65,19 @@ class Operation ( private val numbers : List<Int>) {
 
     val getResult : Int get() = result
 
+    companion object {
+
+
+        fun multiplicationTable(number: Int) {
+            for(i in 0..10)
+            {
+                println("$number * $i = ${number * i}")
+            }
+        }
+
+    }
+
+
 }
 
 
@@ -84,7 +101,7 @@ class SmartPhone(
 
     fun copyWith(
         brand: String? = null,
-        numberOfSim: Int? = null ,
+        numberOfSim: Int? = null,
         screenSize: Double? = null,
         ) : SmartPhone
     {
@@ -104,4 +121,9 @@ class SmartPhone(
         return "Brand : $brand, NumberOfSim : $numberOfSim, ScreenSize : $screenSize"
     }
 
+}
+
+fun isPalimdrom (word : String) : Boolean {
+    val inverseWord = word.reversed()
+    return inverseWord == word
 }
